@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppComponent } from './app.component';
+import { RegisterModalComponent } from './register-modal.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('RegisterModalComponent', () => {
+  let component: RegisterModalComponent;
+  let fixture: ComponentFixture<RegisterModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppComponent ]
+      declarations: [ RegisterModalComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(RegisterModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
