@@ -1,0 +1,37 @@
+
+<div style="justify-content: center; width: 40%">
+    <h1 mat-dialog-title style="text-align: center">{{modalTitleText}}</h1>
+    <div mat-dialog-content style="text-align: center">
+      <p>{{modalContentLoginTopText}}</p>
+      <mat-form-field style="width: 100%; margin: 10px;" appearance="fill">
+        <mat-label>Login ID</mat-label>
+        <input matInput [(ngModel)]="loginId" type="text" matInput>
+      </mat-form-field>
+      <mat-form-field style="width: 100%; margin: 10px;" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="passw" type="password" matInput>
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12" style="padding: 5px">
+        <button style="width: 100%;" mat-raised-button color="primary" (click)="checkLogin()">
+          <ng-container style="font-size: small;"> {{loginButtonText}} </ng-container>
+        </button>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 25px; font-size: small;">
+      <a style="color: #673ab7; cursor: pointer" (click)="openForgotPassword()"><b>{{modalContentForgotPasswordTopText}}</b></a>
+    </div>
+    <div style="text-align: center; margin-top: 15px; font-size: small;">
+      <a style="color: #673ab7; cursor: pointer" (click)="openRegister();"><b>{{modalContentRegisterTopText}}</b></a>
+    </div> 
+  </div>
+  
+  <div align="center" style="font-size: x-small; color: #46277C">
+    Copyright © 2022 aviyan.co.in. All rights reserved.
+    <br>
+    This software is being tested and released as a beta version.
+    <br>
+    Please contact <b>aviyan.auto.email@gmail.com</b> for any queries/feedback.
+  </div>
+  
